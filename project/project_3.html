@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Sail&display=swap");
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: white;
+      color: black;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .header p {
+      margin: 5px 0 20px;
+      font-size: 18px;
+      color: #666;
+    }
+    .news-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .news-card {
+      width: 80%;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+    .news-card img {
+      width: 300px;
+      margin-right: 20px;
+     
+    }
+    .news-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .news-card p {
+      font-size: 16px;
+      color: #666;
+    }
+    .clearfix {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Pay1oad 공식 웹사이트 제작</h1>
+      <p>2024.03 ~ 06</p>
+    </div>
+    <div class="latest-news">
+      <div class="news-cards">
+        <div class="news-card clearfix">
+          
+          <h3>📲 랜딩페이지</h3>
+          <img src="../img/web.png" alt="News Image" />
+          <p>
+
+            피그마를 이용하여 ui/ux를 디자인하였습니다.<br />
+             깔끔하고 잘보이게 하기 위한 직관적인 ui 제작을 목표로 했습니다.<br />
+            또한 랜딩페이지가 부드럽게 넘어갈 수 있도록 스크롤 페이지로 구현하였습니다.
+          </p>
+        </div>
+        <div class="news-card">
+          <h3>🌐 JTW</h3>
+          <p>
+            개인키를 통해 통해 서명되기 때문에 안전하여 jwt 방식을 사용하였습니다.<br />
+            accesstoken을 발급받는 형식으로 제작되었으나, 시간상의 이유로 refresh token은 아직 미구현 되었습니다.<br />
+            <h3>작동 방식<br /></h3>
+            1. 클라이언트에서 아이디와 비밀번호를 입력한다.<br />
+            2. 입력한 아이디와 비밀번호를 서버로 전송한다.<br />
+            3. 서버는 유효한 사용자인지 판단하고 올바르다면 accesstoken을 발급한다.<br />
+            4. 토큰을 확인하고 저장한다.
+          </p>
+        </div>
+        <div class="news-card clearfix">
+          <h3>😈 SQL Injection</h3>
+          
+          <p>
+            주요 해킹 공격 기법중인 SQL Injection 공격을 방지하기 위한 부분을 추가하였습니다. <br />
+            모든 입력창에서 sql 문법과 주요 특수문자들의 입력을 방지하였습니다. <br />
+            sql 쿼리에서 사용되는 단어가 포함되거나, 특수문자의 경우 정규식을 이용하여 이를 감지하였습니다.
+          </p>
+          <img src="../img/code.png" alt="News Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

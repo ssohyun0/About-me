@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Life</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Sail&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        color: black;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>School Life</h1>
+      </div>
+      <div class="content">
+        <div class="card">
+          <img src="../img/calculator.JPG" alt="GPA Image" />
+          <h2>창의 NTree</h2>
+          <p>
+            2023년 창의 NTree에 개발팀으로 참여하여 '계산기의 이중생활'이라는
+            작품을 제작하였습니다. 주제는 쓸모없지만 재미있는 물건으로 저희는
+            사람이 없다고 판단 시 딴 짓을 하는 계산기를 제작하였습니다. 초음파
+            센서로 사람의 유무를 확인하고 없을 시, 모터를 이용하여 춤을 추거나
+            잠을 자는 것을 LED로 구현하였습니다. 난수를 생성하는 과정에서 동일한
+            값이 출력되는 문제가 발생하였고, 이에 컴퓨터에서 난수를 생성하는
+            방법이 문제라는 것을 떠올렸습니다. 그 후, seed를 시간을 기준으로
+            변경하여 문제를 해결하였습니다. 계획한 계산기의 로직을 완성하였고,
+            도전•협동상을 수상하였습니다.
+          </p>
+        </div>
+        <div class="card">
+          <img src="../img/tag.JPG" alt="Creative Entry Award" />
+          <h2>Pay1oad 홍보 팀장</h2>
+          <p>
+            2023-2학기 홍보 팀장으로 운영진을 맡았습니다. 운영진으로서 동아리
+            운영에 힘썼으며, 주로 인스타 게시물 제작을 담당하였습니다.
+          </p>
+        </div>
+        <div class="card">
+          <img src="../img/hack.jpg" alt="Learning Community" />
+          <h2>제2회 와글와글 해커톤 참여</h2>
+          <p>
+            3개월간 해커톤을 위해 3명의 사람들과 함께 각각 리액트/스프링부트를
+            스터디한 후 참가하였습니다. 이후, 팀원들과 해커톤에 참여하였습니다.
+            부여받은 주제는 stack으로 회의를 통해 stack의 사전적 의미인 쌓다와,
+            자료구조를 이용하여 햄버거 쌓기 게임을 제작하기로 하였습니다.
+            프론트엔드로서 참여하였으며, 주로 게임의 로직을 담당하였습니다.
+            push, pop등을 구현하여 로직을 제작하였습니다.
+          </p>
+        </div>
+        <div class="card">
+          <img src="../img/study.JPG" alt="Hackathon" />
+          <h2>학습공동체 참여</h2>
+          <p>
+            알고리즘 수업을 수강하는 사람들과 학습공동체에 참여했습니다. 매주
+            7문제를 풀어와, 문제 풀이 방법을 공유하고 새로운 풀이법을
+            고민하였습니다. 약 3개월 동안 매일 백준 문제를 풀어 골드 4로
+            승급하였습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

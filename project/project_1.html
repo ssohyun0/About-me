@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Sail&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #010412;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        text-align: center;
+        padding: 100px 20px;
+      }
+      .header h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
+      .content {
+        display: flex;
+        padding: 50px 20px;
+      }
+      .content .left,
+      .content .right {
+        flex: 1;
+        padding: 20px;
+      }
+      .left h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle p {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .bottom-content {
+        padding: 50px 20px;
+      }
+      .bottom-content h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .bottom-content .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .feature {
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+        background-color: #333333;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      }
+      .feature p {
+        color: #ffffff;
+      }
+      .services {
+        padding: 50px 20px;
+        color: white;
+      }
+      .services h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+      }
+      .services .service-container {
+        display: flex;
+        justify-content: space-around;
+      }
+      .services .service {
+        flex: 1;
+        max-width: 300px;
+        text-align: center;
+        margin: 10px;
+      }
+      .services .service h3 {
+        margin-bottom: 20px;
+      }
+      .services .service p {
+        color: white;
+      }
+      .awards {
+        padding: 50px 20px;
+        color: white;
+      }
+      .awards h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+      }
+      .awards .award-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .awards .award {
+        max-width: 300px;
+        text-align: center;
+        margin: 10px;
+      }
+      .awards .award img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .awards .award p {
+        color: white;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>피싱사이트 탐지 프로젝트</h1>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="left">
+          <h2>
+            피싱 사이트 url의 특징을 조사하고, 이를 기반으로 python으로 피싱
+            사이트인지 판단하는 프로그램을 제작하였습니다.
+          </h2>
+          <p>2023.09.12 ~ 2023.11.30</p>
+        </div>
+        <div class="right">
+          <div class="circle">
+            <a
+              href="https://github.com/ssohyun0/Phishingsite_Detection"
+              target="_blank"
+            >
+              <h1>🚀</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-content">
+        <h2>Dev.</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>IP, 16진수 주소 사용 여부</h3>
+            <p>
+              일반적으로 웹사이트는 쉽게 기억할 수 있는 도메인 이름을
+              사용합니다. IP 주소는 숫자로 이루어져 있어 사용자들에게 익숙하지
+              않습니다.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>비정상적으로 긴 URL</h3>
+            <p>
+              피싱 사이트는 긴 URL을 사용하여 사용자를 혼란시키고, URL에 악성
+              코드나 피싱 요소를 숨길 수 있습니다. 또한, 긴 URL을 통해 사용자가
+              URL 전체를 제대로 확인하지 못하게 합니다.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>단축 URL의 실제 리다이렉션 주소</h3>
+            <p>
+              피싱 공격자는 단축 URL을 사용하여 사용자가 악성 사이트로
+              리다이렉션되는 것을 숨길 수 있습니다. 사용자는 단축 URL이
+              안전하다고 생각할 수 있지만, 실제로는 피싱 사이트로 연결될 수
+              있습니다.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>https 프로토콜 사용 여부</h3>
+            <p>
+              피싱 사이트는 종종 HTTPS를 사용하지 않거나, 위조된 인증서를
+              사용하여 보안이 취약합니다. HTTPS가 없는 사이트는 사용자의
+              데이터를 안전하게 보호하지 못할 가능성이 큽니다.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>도메인의 유효, 생성일자</h3>
+            <p>
+              피싱 사이트는 종종 새로운 도메인을 사용하여 빠르게 사이트를
+              생성하고 운영합니다. 도메인이 최근에 생성되었거나, 유효하지 않은
+              경우 피싱 사이트일 가능성이 높습니다.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>비표준포트 사용 여부</h3>
+            <p>
+              피싱 사이트는 비표준 포트를 사용하여 탐지를 피하거나, 악성
+              트래픽을 전송할 수 있습니다. 비표준 포트를 사용하는 사이트는
+              의심을 받을 수 있습니다.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>비슷한 문자에 대한 숫자의 대체</h3>
+            <p>
+              사용자가 정상적인 사이트로 착각하게 만들기 위해 문자 대신 숫자를
+              사용하여 도메인을 위조합니다. 이는 사용자가 URL의 미세한 차이를
+              쉽게 인식하지 못하게 하여 피싱 공격을 성공시키려는 의도입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="services">
+        <h2>experience</h2>
+        <div class="service-container">
+          <div class="service">
+            <h1>🐍</h1>
+            <h3>파이썬</h3>
+            <p>
+              URL 데이터셋을 처리하고 가공하는 과정에서 <br />
+              파이썬을 이용한 엑셀 분석을 심도 있게 수행할<br />
+              수 있었습니다. 또한, URL의 다양한 특징을 추출<br />
+              하기 위해 파이썬으로 여러 라이브러리를<br />
+              활용하는 기회를 가질 수 있었습니다.
+            </p>
+          </div>
+          <div class="service">
+            <h1>💻</h1>
+            <h3>컴퓨터 지식</h3>
+            <p>
+              URL의 구조와 프로토콜을 학습함으로써<br />
+              웹에 대한 이해를 높였고, 리다이렉션과 HTTP <br />
+              응답 코드를 배움으로써 서버 동작에 대한<br />
+              이해를 강화했습니다. 더불어 C&C 서버를 <br />
+              배우며 보안적 측면에서의 이해를 높이는 <br />경험도 쌓았습니다.
+            </p>
+          </div>
+          <div class="service">
+            <h1>⚙️</h1>
+            <h3>머신러닝</h3>
+            <p>
+              탐지를 하는 방법 중 하나로 머신러닝을 이용해 보았습니다.
+              머신러닝의 개념을 학습하고<br />
+              구현하는 과정에서 알고리즘의 이해를 높일 수
+              <br />있었고, 머신러닝에서의 데이터셋의 중요성을 <br />
+              느낄 수 있었습니다.
+            </p>
+          </div>
+        </div>
+        <div class="awards">
+          <h2>Awards</h2>
+          <div class="award-container">
+            <div class="award">
+              <img src="../img/project.jpg" alt="Award Image" />
+              <p>
+                Pay1oad 내 우수 팀프로젝트 선정,<br />
+                최우수상 수상
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Sail&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        color: black;
+        text-align: center;
+      }
+      h1,
+      h2 {
+        font-family: "Sail", cursive;
+        font-weight: 600;
+        color: wheat;
+        text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .box_s {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 1px 10px rgb(255 255 255 / 63%);
+        position: relative;
+      }
+      .hidden_text {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .box_s:hover .hidden_text {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h2></h2>
+    &nbsp;
+    <p></p>
+    &nbsp;
+    <div class="container">
+      <div class="box_s">
+        <h1>🏆</h1>
+        <p
+          class="hidden_text"
+          onclick="parent.window.location.href='school.html'"
+        >
+          창의 NTree 도전 협동상 수상
+        </p>
+      </div>
+      <div class="box_s">
+        <h1>📣</h1>
+        <p
+          class="hidden_text"
+          onclick="parent.window.location.href='school.html'"
+        >
+          교내 정보보안동아리 Pay1oad 홍보 팀장
+        </p>
+      </div>
+      <div class="box_s">
+        <h1>👩‍💻</h1>
+        <p
+          class="hidden_text"
+          onclick="parent.window.location.href='school.html'"
+        >
+          제2회 와글와글 해커톤 장려상(3등) 수상
+        </p>
+      </div>
+      <div class="box_s">
+        <h1>📚</h1>
+        <p
+          class="hidden_text"
+          onclick="parent.window.location.href='school.html'"
+        >
+          2024-1 학습공동체
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>장소현 자기소개페이지</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Sail&display=swap");
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1,
+        h2 {
+            font-family: "Sail", cursive;
+            font-weight: 600;
+            color: wheat;
+            text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 0; 
+        }
+        .container {
+            min-width: 1200px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 70px;
+            line-height: 70px;
+        }
+        header li a {
+            position: relative;
+            top: 0;
+            transition: top 0.3s ease;
+        }
+        header li a:hover {
+            top: -3px;
+        }
+        header .tooltip-text {
+            display: none;
+            position: absolute;
+            bottom: -30px;
+            left: -20px;
+            width: 70px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 6px;
+            padding: 5px 0;
+            background: #fcd53f;
+            color: darkblue;
+        }
+        header a:hover .tooltip-text {
+            display: block;
+        }
+        /*Home*/
+        #home {
+            background-color: #e7edf7;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: 0 -120px;
+        }
+        #home .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #home .title h1 {
+            width: 500px;
+            height: 60px;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        #home .title p {
+            font-size: 15px;
+            font-weight: 400px;
+            color: #495865;
+        }
+        /*about*/
+        #about {
+            background-color: #bad1e6;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+        }
+        #about .about_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #about .title {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #about .title h2 {
+            font-size: 3rem;
+        }
+        #about .about_title {
+            margin: 0 auto;
+            padding: 30px 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+            width: 300px;
+        }
+        #about .about_profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 30px 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+            width: 300px;
+        }
+        #about .img_box {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        #about .img_box img {
+            height: 100%;
+        }
+        #about .introduction {
+            width: 300px;
+            margin: 0 auto;
+        }
+        #about .desc_box1 {
+            margin-bottom: 20px;
+        }
+        #about .desc_box1 li p:first-child {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        #about .desc_box1 li:not(:last-child) {
+            margin-right: 30px;
+        }
+        #about .desc_box1 li p:last-child {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        #about .desc_box2 {
+            font-size: 13px;
+            padding: 0 25px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #about .desc_box2 span {
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid white;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+            padding: 5px;
+        }
+        #about .desc_box2 span:first-child {
+            width: 200px;
+        }
+        #about .desc_box2 span:last-child {
+            width: 20px;
+        }
+        /*school*/
+        #school .title {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #school .title h2 {
+            font-size: 3rem;
+        }
+        #school {
+            background-color: #fbb9ab;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: 0 -120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #school .iframe-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        #school iframe {
+            flex: 1;
+            border: none;
+        }
+        .card {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+        /* Projects */
+        #project {
+            background-color: #b58f94;
+            position: relative;
+            background-size: cover;
+            height: 300vh;
+            width: 100vw;
+            margin-top: 0;
+            padding-top: 70px;
+        }
+        .box-project{
+            margin: 30px auto;
+            display: flex;
+            padding: 35px;
+            width: 80vw;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+        }
+        .img-project{
+            border-radius: 15px;
+            width: 450px;
+            height: 300px;
+            margin-bottom: 10px;
+            float: left; 
+        }
+        .txt-project{
+            text-align: left;
+            margin: 25px 0 0 40px;
+        }
+        .txt-project h3 {
+            font-family: "Sail";
+            font-size: 28px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+        .txt-project dl dt {
+            font-family: "Sail";
+            color: #6a75ca;
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+        .txt-project dl dd {
+            color: black;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .btn-detail {
+            display: block;
+            margin: 10px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">🌷<span class="tooltip-text">Home</span></a>
+                </li>
+                <li>
+                    <a href="#about">🌷<span class="tooltip-text">About</span></a>
+                </li>
+                <li>
+                    <a href="#school">🌷<span class="tooltip-text">School</span></a>
+                </li>
+                <li>
+                    <a href="#project">🌷<span class="tooltip-text">Project</span></a>
+                </li>
+                <li>
+                    <a href="#contact">🌷<span class="tooltip-text">Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <a name="home">
+                <section id="home">
+                    <div class="title">
+                        <h1>Welcome</h1>
+                        <p>안녕하세요 컴퓨터공학과 23학번 장소현입니다</p>
+                    </div>
+                </section>
+            </a>
+            <a name="about">
+                <section id="about">
+                    <div class="title">
+                        <h2>about</h2>
+                    </div>
+                    <div class="about_profile">
+                        <div class="img_box">
+                            <img src="./img/IMG_9768.jpg" alt="프로필" />
+                        </div>
+                        <div class="introduction">
+                            <ul class="desc_box1">
+                                <li>
+                                    <div>
+                                        <p>장소현</p>
+                                        <p>이름</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>2003.12.03</p>
+                                        <p>생년월일</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>송파</p>
+                                        <p>거주지</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="desc_box2">
+                                <span>jsh0312033@gmail.com</span>
+                                <span>📧</span>
+                            </div>
+                            <div class="desc_box2">
+                                <span>ssohyun0</span>
+                                <span>🐈</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </a>
+            
+                    <a name="school">
+                      <section id="school">
+                          <div class="category">
+                              <h2>school</h2>
+                          </div>
+                          <div class="iframe-container">
+                              <iframe src="./timetable/school_L.html"></iframe>
+                              <iframe src="./timetable/school_R.html"></iframe>
+                          </div>
+                      </section>
+                  </a>
+                </section>
+            </a>
+            <a name="project">
+                <section id="project">
+                    <div class="category">
+                        <h2>Projects</h2>
+                    </div>
+                    <article class="box-project">
+                        <div>
+                            <img
+                                class="img-project"
+                                src="img/project1.png"
+                                alt="첫번째 프로젝트 이미지"
+                            />
+                            <button
+                                class="btn-detail"
+                                type="button"
+                                onclick="window.location.href='./project/project_1.html'"
+                            >
+                                자세히 보기
+                            </button>
+                        </div>
+                        <div class="txt-project">
+                            <h3>I Love Movie</h3>
+                            <dl>
+                                <dt>기간</dt>
+                                <dd>2022.03 ~ 06</dd>
+                                <dt>설명</dt>
+                                <dd>피싱 url들의 특징을 기반으로 피싱 사이트를 탐지하는 프로젝트를 진행하였습니다.</dd>
+                                <dt>사용 기술</dt>
+                                <dd>Python</dd>
+                            </dl>
+                        </div>
+                    </article>
+
+
+                    <article class="box-project">
+                        <div>
+                            <img
+                                class="img-project"
+                                src="img/rule.jpg"
+                                alt="두번째 프로젝트 이미지"
+                            />
+                            <button
+                                class="btn-detail"
+                                type="button"
+                                onclick="window.location.href='./project/project_2.html'"
+                            >
+                                자세히 보기
+                            </button>
+                        </div>
+                        <div class="txt-project">
+                            <h3>와글와글 해커톤</h3>
+                            <dl>
+                                <dt>기간</dt>
+                                <dd>2023.02.16~02.17</dd>
+                                <dt>설명</dt>
+                                <dd>제 2회 와글와글 해커톤에 참여하였습니다.</dd>
+                                <dt>사용 기술</dt>
+                                <dd>React</dd>
+                            </dl>
+                        </div>
+                    </article>
+
+
+                    <article class="box-project">
+                        <div>
+                            <img
+                                class="img-project"
+                                src="img/web.png"
+                                alt="세번째 프로젝트 이미지"
+                            />
+                            <button
+                                class="btn-detail"
+                                type="button"
+                                onclick="window.location.href='./project/project_3.html'"
+                            >
+                                자세히 보기
+                            </button>
+                        </div>
+                        <div class="txt-project">
+                            <h3>공식 웹사이트 제작 및 보안 솔루션 적용</h3>
+                            <dl>
+                                <dt>기간</dt>
+                                <dd>2024.03 ~ 06</dd>
+                                <dt>설명</dt>
+                                <dd>정보보안동아리의 공식 웹사이트 제작에 팀장으로서 참여하였습니다.</dd>
+                                <dt>사용 기술</dt>
+                                <dd>React</dd>
+                            </dl>
+                        </div>
+                    </article>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Sail&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        color: black;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+      .header p {
+        margin: 5px 0 20px;
+        font-size: 18px;
+        color: #666;
+      }
+      .cards {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+      .card {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .card img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .card p {
+        font-size: 16px;
+        color: #666;
+      }
+      .latest-news {
+        margin-top: 40px;
+      }
+      .latest-news h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .news-cards {
+        display: flex;
+        justify-content: space-between;
+      }
+      .news-card {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .news-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .news-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .news-card p {
+        font-size: 16px;
+        color: #666;
+      }
+      .award-section {
+        margin-top: 40px;
+      }
+      .award-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .award-photo {
+        display: flex;
+        justify-content: center;
+      }
+      .award-photo img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>와글와글 해커톤</h1>
+        <p>2024.02.16 ~ 17</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h2>👩‍💻</h2>
+          <h2>Study</h2>
+          <p>3개월간의 리액트/스프링부트 스터디와 간단한 캘린더 프로젝트</p>
+        </div>
+        <div class="card">
+          <h2>🍔</h2>
+          <h2>Stack</h2>
+          <p>Stack 구조를 이용한 햄버거 구조 저장과 명령어 저장 기능 구현</p>
+        </div>
+        <div class="card">
+          <h2>📲</h2>
+          <h2>Login</h2>
+          <p>카카오 API를 이용한 회원가입 및 로그인 시스템 구현</p>
+        </div>
+        <div class="card">
+          <h2>🏆</h2>
+          <h2>Ranking</h2>
+          <p>게임의 흥미를 높이기 위한 랭킹 시스템 도입</p>
+        </div>
+      </div>
+      <div class="latest-news">
+        <h2>experience</h2>
+        <div class="news-cards">
+          <div class="news-card">
+            <img src="../img/react.png" alt="News Image" />
+            <h3>리액트</h3>
+            <p>
+              리액트를 처음 배우면서, 스타일링 외에도 state 관리, 합성, 컨텍스트
+              등을 알게되었습니다. 또한 직접 캘린더를 제작하면서 이해를 높일 수
+              있었습니다.
+            </p>
+          </div>
+          <div class="news-card">
+            <img src="../img/calender.png" alt="News Image" />
+            <h3>프론트-백 rest api 연결</h3>
+            <p>
+              백과 통신하기 위하여 axios를 경험했습니다. 또한 회원가입/로그인을
+              위한 카카오 api를 사용하였습니다. 이 과정에서 다양한 api 사용과
+              cors 보안 정책등에 대해 알 수 있었습니다.
+            </p>
+          </div>
+          <div class="news-card">
+            <img src="../img/responsive.png" alt="News Image" />
+            <h3>반응형 웹 구성</h3>
+            <p>
+              해커톤 중 멘토님으로부터 반응형 웹을 제작하기 위한 팁을
+              알게되었습니다. 반응형 웹을 위한 컴포넌트 관리, px, vh, em 등에
+              대해서 사용하는 방법을 자세하게 알 수 있었습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="award-section">
+        <h2>Video</h2>
+        <div class="award-photo">
+          <video src="../img/video.MP4" controls></video>
+        </div>
+      </div>
+      <div class="award-section">
+        <h2>Award</h2>
+        <div class="award-photo">
+          <img src="../img/price.jpg" alt="Award Photo" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
